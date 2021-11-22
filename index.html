@@ -24,7 +24,41 @@
             <li class="header__item"><a class="header__link link" href="#">Контакты</a></li>
         </ul>
     </nav>
-    
+    <!--mobile menu -->
+    <button class="burger-btn js-open-menu">
+        <svg class="burger-icon">
+            <use href="./images/icons.svg#icon-burger-icon" width="24" height="16"></use>
+        </svg>
+    </button>
+    <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-nav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list list">
+                    <li class="mobile-nav__item"><a class="mobile-nav__link link current" href="./index.html">Студия</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link link" href="./portfolio.html">Портфолио</li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-social">
+            <ul class="mobile-contact__list list">
+                <li class="mobile-contact__item"><a class="mobile-phone__link link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+                <li class="mobile-contact__item"><a class="mobile-mail__link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>  
+            </ul>
+            <ul class="mobile-social__list">
+                <li class="mobile-social__item"><a class="mobile-social__link link" href="#">Instagram</a></li>
+                <li class="mobile-social__item"><a class="mobile-social__link link" href="#">Twitter</a></li>
+                <li class="mobile-social__item"><a class="mobile-social__link link" href="#">Facebook</a></li>
+                <li class="mobile-social__item"><a class="mobile-social__link link" href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <button class="close-mobile-btn js-close-menu">
+            <svg class="close-btn-icon">
+                <use href="./images/icons.svg#icon-close_btn" width="18.67" height="18.67"></use>
+            </svg>
+        </button>
+    </div>
+    <!--End mobile menu -->
         <div class="header-contacts">
     <ul class="list header__list">
         <li class="header-contact__item"><a class="header-contacts__link link" href="mailto:info@devstudio.com">
@@ -456,6 +490,7 @@
             
         </div>
     </div>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 
