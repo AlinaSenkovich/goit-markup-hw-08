@@ -5,6 +5,7 @@
     position: absolute;
     position: fixed;
     top: 0;
+    overflow-y: scroll;
     transition: opacity 250ms linear, visibility 250ms linear;
 }
 

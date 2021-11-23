@@ -72,8 +72,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
+    overflow: hidden;
     padding: 48px 40px;
+
     transition: opacity 250ms linear, visibility 250ms linear;
 }
 .mobile-menu.is-open {
@@ -127,6 +128,8 @@ color: #2196F3;
 }
 .mobile-social__list {
     display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 .mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
