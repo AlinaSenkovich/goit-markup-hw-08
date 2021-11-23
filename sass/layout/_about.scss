@@ -3,10 +3,12 @@
     padding-bottom: 94px;
 }
 .about-list {
-    display: flex;
+    @media screen and (min-width:1200px) {
+       display: flex; 
+    } 
 }
 .title-item {
-    width: 270px;
+    width: 100%;
 
     &:not(:last-child) {
         margin-right: 30px;

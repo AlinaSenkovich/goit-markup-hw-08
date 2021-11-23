@@ -793,12 +793,14 @@ img {
   padding-bottom: 94px;
 }
 
-.about-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .about-list {
+    display: flex;
+  }
 }
 
 .title-item {
-  width: 270px;
+  width: 100%;
 }
 
 .title-item:not(:last-child) {
