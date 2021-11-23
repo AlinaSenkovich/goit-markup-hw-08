@@ -1,4 +1,5 @@
 .header {
+    display: flex;
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
@@ -178,77 +179,106 @@ color: #2196F3;
     align-items: center;
     justify-content: space-between;
 }
-//.header__nav{
-//    display: flex;
-//    align-items: center;
-//}
-//.header__logo{
-//    margin-right: 93px;
-//}
-//.header__list{
-//    display: flex;
-//}
-//.header__item:not(:last-child) {
-//    margin-right: 50px;
-//}
-//.header-contacts{
-//margin-left: auto;
-//}
-//.header-contacts__link {
-//    font-weight: 500;
-//    font-size: 14px;
-//    line-height: 1.14;
-//    letter-spacing: 0.02em;
-//    color: var(--second-text-color);
-//    transition-property: color;
-//    transition-duration: 250ms;
-//    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.header__nav{
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.header__logo{
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
+}
+.header__list{
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
+.header__item:not(:last-child) {
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;
+    }
+}
+.header-contacts{
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
+    }
+}
+.header-contacts__link {
+    @media screen and (min-width:1200px){
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//    &:hover, &:focus {
-//    color: var(--accent-color);
-//}}
+    &:hover, &:focus {
+    color: var(--accent-color); }
+}}
 
-//.header-contact__icon {
-//    margin-right: 10px;
-//    fill: currentColor;
-//    vertical-align: middle;
-//}
-//.icon-mail {
-//    width: 16px;
-//    height: 12px;
-//}
-//.icon-phone {
-//    width: 10px;
-//    height: 16px;
-//}
-//.header__link {
-//    font-weight: 500;
-//    font-size: 14px;
-//    line-height: 1.14;
-//    letter-spacing: 0.02em;
-//    color: var(--primary-text-color);
-//    position: relative;
-//    transition-property: color;
-//    transition-duration: 250ms;
-//    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.header-contact__icon {
+    @media screen and (min-width:1200px) {
+        margin-right: 10px;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+}
+.icon-mail {
+    @media screen and (min-width:1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.icon-phone {
+    @media screen and (min-width:1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+.header__link {
+    @media screen and (min-width:1200px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+        position: relative;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//    &:hover, &:focus {
-//    color: var(--accent-color);
-//}}
+        &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}}
 
-//.current {
-//    color: var(--accent-color);
-//    }
-//.header__link.current::after {
-//    content: '';
-//    width: 100%;
-//    position: absolute;
-//    height: 4px;
-//    border-radius: 2px;
-//    bottom: -32px;
-//    display: block;
-//    background-color: var(--accent-color);
-//}
-//.header-contact__item:not(:last-child) {
-//    margin-right: 50px;
-//}
+.current {
+    @media screen and (min-width:1200px) {
+        color: var(--accent-color);
+    }
+}
+.header__link.current::after {
+    @media screen and (min-width:1200px) {
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 4px;
+        border-radius: 2px;
+        bottom: -32px;
+        display: block;
+        background-color: var(--accent-color);
+    }
+}
+.header-contact__item:not(:last-child) {
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;
+    }
+}
