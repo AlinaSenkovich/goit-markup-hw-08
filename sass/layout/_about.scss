@@ -1,4 +1,5 @@
 .about {
+    width: 100%;
     @media screen and (max-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -10,10 +11,11 @@
 .about-list {
     @media screen and (max-width:768px) {
        align-items: center; 
+       justify-content: center;
      } 
     @media screen and (min-width:768px) {
-       flex-wrap: wrap;
-        margin: -15px;
+        display: flex;
+        flex-wrap: wrap;
 
      } 
     @media screen and (min-width:1200px) {
@@ -23,19 +25,23 @@
 .title-item {
     width: 100%;
     @media screen and (max-width:768px) {
-        align-items: center; 
+       margin-right: auto;
+       margin-left: auto;
+        &:not(:last-child) {
+            margin-bottom: 30px;}
+        
     } 
    @media screen and (min-width:768px) {
-       margin: 15px;
-       width: calc((100% - 15 * 2) / 2);
+    margin-right: 30px;
+    flex-basis: calc((100% - 1 * 30px) / 2);
        
     } 
    @media screen and (min-width:1200px) {
-      display: flex; 
+      &:not(:last-child) {
+        margin-right: 30px;
    } 
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    
 }
 }
 .title-list-text {
