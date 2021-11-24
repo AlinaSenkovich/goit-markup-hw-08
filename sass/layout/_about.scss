@@ -1,14 +1,38 @@
 .about {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+    @media screen and (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+}}
 .about-list {
+    @media screen and (max-width:768px) {
+       align-items: center; 
+     } 
+    @media screen and (min-width:768px) {
+       flex-wrap: wrap;
+        margin: -15px;
+
+     } 
     @media screen and (min-width:1200px) {
        display: flex; 
     } 
 }
 .title-item {
     width: 100%;
+    @media screen and (max-width:768px) {
+        align-items: center; 
+    } 
+   @media screen and (min-width:768px) {
+       margin: 15px;
+       width: calc((100% - 15 * 2) / 2);
+       
+    } 
+   @media screen and (min-width:1200px) {
+      display: flex; 
+   } 
 
     &:not(:last-child) {
         margin-right: 30px;
