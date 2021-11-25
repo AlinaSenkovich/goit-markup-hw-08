@@ -1,14 +1,31 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+    width: 100%;
+    @media screen and (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+}}
+
 .clients-list {
     display: flex;
-    justify-content: center;
-    margin-right: 30px;
+    @media screen and (max-width:768px) {
+        flex-wrap: wrap;
+      } 
+     @media screen and (min-width:768px) {
+         flex-wrap: wrap;
+         min-width: 738px;
+      } 
+     @media screen and (min-width:1200px) {
+        justify-content: center;
+        margin-right: 30px;
 
-    &:last-child {
+        &:last-child {
         margin-right: 0;
+     } 
+    
     }
 }
 .clients-item {

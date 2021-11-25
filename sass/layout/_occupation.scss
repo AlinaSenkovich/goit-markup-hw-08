@@ -1,5 +1,12 @@
 .occupation {
-    padding-bottom: 94px;
+    @media screen and (min-width: 1200px){
+        padding-bottom: 94px;
+    }
+}
+.occupation-conteiner {
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
 }
 .occupation-list {
     display: flex;
