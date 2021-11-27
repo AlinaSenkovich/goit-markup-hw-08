@@ -1049,7 +1049,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .team-item {
-    width: 450px;
+    max-width: 450px;
   }
   .team-item:not(:last-child) {
     margin-bottom: 30px;
