@@ -798,12 +798,7 @@ img {
 
 .hero-conteiner {
   text-align: center;
-}
-
-@media screen and (max-width: 1199px) {
-  .hero-conteiner {
-    max-width: 420px;
-  }
+  width: 100%;
 }
 
 .section-title {
@@ -886,9 +881,15 @@ img {
   display: inline-block;
 }
 
-@media screen and (max-width: 768px) and (min-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .title-text-hero {
     max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .title-text-hero {
+    width: 420px;
   }
 }
 
@@ -939,7 +940,6 @@ img {
 
 @media screen and (max-width: 768px) {
   .title-item {
-    width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
