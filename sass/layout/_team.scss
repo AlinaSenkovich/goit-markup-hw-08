@@ -1,7 +1,7 @@
 .team {
     width: 100%;
     background-color: #F5F4FA;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -10,8 +10,23 @@
         padding-bottom: 94px;
 }
 }
+.title-menu {
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+}
+}
 .team-list {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:767px) {
         align-items: center; 
         justify-content: center;
       } 

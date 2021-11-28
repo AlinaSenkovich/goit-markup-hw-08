@@ -78,14 +78,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.71;    
+    margin-bottom: 30px; 
+    font-size: 12px;
+    line-height: 1.17;   
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+
     @media screen and (max-width: 768px) {
-        font-size: 12px;
+        flex-wrap: wrap;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+}
 
     &::before{
         display: block;
@@ -112,11 +117,15 @@
     outline: 2px solid #212121;
 }
 .modal-form-checkbox-link{
-    font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
-color: var(--accent-color);
+    font-size: 12px;
+    line-height: 1.17; 
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+}
 }
 .modal-form-btn {
     display: block;

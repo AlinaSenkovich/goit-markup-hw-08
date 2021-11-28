@@ -1,17 +1,32 @@
 .section-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;   
+    @media screen and (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+} 
    }
    .menu-portfolio-list {
        display: flex;
        text-align: center;
        justify-content: center;
        margin-bottom: 50px;
+       @media screen and (max-width: 768px){
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 30px;
+       }
    }
-   .menu-portfolio:not(:last-child) {
+   .menu-portfolio-item:not(:last-child) {
    margin-right: 8px;
    }
-   
+   .menu-portfolio-item {
+    @media screen and (max-width: 768px){
+        margin-bottom: 15px;
+    }
+   }
    .portfolio-content-list {
        display: flex;
        flex-wrap: wrap;
@@ -19,32 +34,52 @@
    
    }
    .portfolio-content-item {
-       flex-basis: calc((100% - 90px) / 3);
-       margin-right: 30px;
        margin-bottom: 30px;
        box-sizing: border-box;
        transition-property: box-shadow;
        transition-duration: 250ms;
        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+       @media screen and (max-width: 767px) {
+        &:nth-child(9) {
+            margin-bottom: 0px;
+        }
+       }
+       @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-basis: calc((100% - 1 * 30px) / 2);
+        margin-right: 30px;
+        &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
+            margin-right: 0px;
+        }
+        &:nth-child(9) {
+            margin-bottom: 0px;
+        }
+        }
+        @media screen and (min-width:1200px) {
+            flex-basis: calc((100% - 90px) / 3);
+            margin-right: 30px;
+            &:nth-child(3n) {
+                margin-right: 0;
+                }
+            &:nth-child(n + 7) {
+                margin-bottom: 0;
+            }
+        }
+
        &:hover, &:focus {
        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   }}
-   .portfolio-content-item:hover .portfolio-content-text{
-       transform: translateY(0);
+       &:hover .portfolio-content-text{
+        transform: translateY(0);}
+    }
    }
+   
    .portfolio-text {
        padding-top: 20px;
        padding-left: 24px;
        padding-bottom: 20px;
        border: 1px solid #EEEEEE;
    }
-   .portfolio-content-item:nth-child(3n) {
-   margin-right: 0;
-   }
-   .portfolio-content-item:nth-child(n + 7) {
-       margin-bottom: 0;
-   }
+   
    .title-portfolio {
        font-weight: 700;
        font-size: 18px;

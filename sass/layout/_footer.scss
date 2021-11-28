@@ -7,6 +7,8 @@
          display: flex;
          flex-wrap: wrap;
          min-width: 738px;
+        justify-content: space-around;
+        flex-direction: row;
       } 
      @media screen and (min-width:1200px) {
         display: flex; 
@@ -32,9 +34,15 @@ margin-top: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     letter-spacing: 0.03em;
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+}
 }
 .studio-light {
     color: var(--primary-title-color);
@@ -72,29 +80,23 @@ margin-top: 20px;
     margin-bottom: 20px;
 }
 .footer-right {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1199px) {
         align-items: center; 
         justify-content: center;
         margin-bottom: 60px;
       } 
-     @media screen and (min-width:768px) and (max-width: 1199px){
-        align-items: center; 
-        justify-content: center;
-      } 
+    
      @media screen and (min-width:1200px) {
         width: 206px;
      } 
     
 }
 .footer-left {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1199px) {
         margin-bottom: 60px;
         display: flex;
-    flex-direction: column;
-    align-items: center;
-      } 
-     @media screen and (min-width:768px) and (max-width: 1199px){
-        margin-bottom: 60px;
+        flex-direction: column;
+        align-items: center;
       } 
      @media screen and (min-width:1200px) {
         margin-right: 70px;
@@ -109,7 +111,6 @@ margin-top: 20px;
      @media screen and (min-width:1200px) {
         padding-bottom: 30px;
      } 
-    
 }
 .footer-item {
     width: 44px;
@@ -133,8 +134,9 @@ margin-top: 20px;
 
     &:hover,
     &:focus {
-    background-color: var(--accent-color);
     border-radius: 50%;
+    background-color: var(--accent-color);
+    
 }}
 .footer-icon {
     fill: #ffffff;
@@ -173,6 +175,8 @@ margin-top: 20px;
     flex-direction: column;
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
     }
     @media screen and (min-width: 1200px){
         margin-right: 12px;
@@ -199,6 +203,10 @@ margin-top: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
+    width: 100%;
+    @media screen and (max-width: 1199px){
+        max-width: 450px;
+    }
 }
 .footer-form-btn {
     display: block;
