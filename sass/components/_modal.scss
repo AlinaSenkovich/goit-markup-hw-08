@@ -1,18 +1,20 @@
 .modal {
-    width: 100%;
     background-color: #ffffff;
     border-radius: 4px;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(0);
     transition: transform 250ms linear;
     padding: 40px;
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        max-width: 528px;
+   
+    @media screen and (min-width: 500px) and (max-width: 1199px){
+        width: 450px;
+        min-height: 609px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 528px;
         min-height: 581px;
-        transform: translate(-50%, -50%) rotate(0);
     }
 }
 .modal-icon{
