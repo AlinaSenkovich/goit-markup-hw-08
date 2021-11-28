@@ -211,7 +211,13 @@ img {
   padding: 40px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1199px) {
+@media screen and (max-width: 449px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     min-height: 609px;
