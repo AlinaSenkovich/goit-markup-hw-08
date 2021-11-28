@@ -1,7 +1,10 @@
 .hero-conteiner {
     text-align: center;
-    max-width: 420px;
+    @media screen and (max-width: 1199px){
+        max-width: 420px;
+    }
 }
+    
 .section-title {
     padding-top: 118px;
     padding-bottom: 118px;

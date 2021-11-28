@@ -792,7 +792,12 @@ img {
 
 .hero-conteiner {
   text-align: center;
-  max-width: 420px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-conteiner {
+    max-width: 420px;
+  }
 }
 
 .section-title {
